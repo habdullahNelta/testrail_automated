@@ -1,0 +1,18 @@
+host: https://esteventester.testrail.io
+project: test
+username: atharv.esteven@foundtoo.com
+password: pHhOWGNPn85dGQiL0Flr
+title: TestNG33
+#suite_id: 8
+run_id: 4
+#key: /2HLUtQj8Lftji0KqynP-tDOf/YIPzEDaDRaPAXU6
+file: C:\Users\Hasan Abdullah\IdeaProjects\testng\report_sample\TEST-TestSuite.xml  
+#POST https://esteventester.testrail.io/index.php?/api/v2/get_case/1&suite_id=4
+#GET https://esteventester.testrail.io/index.php?/api/v2/get_cases/1&suite_id=4&filter=AddTwoNumbers
+
+#curl -H "Content-Type: application/json" -u "atharv.esteven@foundtoo.com:pHhOWGNPn85dGQiL0Flr" "https://esteventester.testrail.io/index.php?/api/v2/get_cases/7&suite_id=29&filter=AddTwoNumbersWithDecimals"
+#index.php?/api/v2/get_results_for_case/1
+
+# run test with:  mvn test -DsuiteXmlFile=IdeaProjects\testng\MultiplicationTest.xml
+# update test with:  trcli -y -c "trcli-config2.yml"  parse_junit
+  

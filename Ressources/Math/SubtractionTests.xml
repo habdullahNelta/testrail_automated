@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Math">
+    <test verbose="2" preserve-order="true"
+          name="SubtractionTests">
+        <classes>
+            <class name="com.idera.testrail.tests.SubtractionTests">
+                <methods>
+                    <include name="SubtractTwoNumbers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
