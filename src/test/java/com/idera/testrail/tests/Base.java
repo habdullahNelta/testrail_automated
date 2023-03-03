@@ -32,7 +32,7 @@ public class Base {
 
         Map<String, Integer> map1 = new HashMap<>();
         // to read the value from csv
-         CSVReader reader = new CSVReader(new FileReader(System.getProperty("user.dir") +"\\Test_CSV.csv"));
+         CSVReader reader = new CSVReader(new FileReader(System.getProperty("user.dir") +"/Test_CSV.csv"));
         String[] nextLine;
         int Run_ID_Var = 0;
         int Suite_ID_Var = 0;
