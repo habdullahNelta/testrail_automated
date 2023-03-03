@@ -14,5 +14,5 @@ jobs:
       - name: Perform a Pester test from the Tests.ps1 file
         shell: pwsh
         run: |
-          mvn test -DsuiteXmlFile=IdeaProjects\testng\MultiplicationTest.xml
+          clean test -DsuiteXmlFile=IdeaProjects\testng\MultiplicationTest.xml
           
