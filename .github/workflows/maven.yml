@@ -1,16 +1,27 @@
-name: Test PowerShell on Ubuntu
-on: push
+name: Selenium with TestNG - CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  hasan-test:
-    name:  test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-        
-      - name: Perform a Pester test from the Tests.ps1 file
-        shell: pwsh
-        run: |
-         mvn test -DsuiteXmlFile=Ressources\PlayerRegressionTest.xml
+  build:
 
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+
+    - uses: browser-actions/setup-chrome@latest
+    - run: chrome --version
+
+    - name: Build with Maven
+      run: mvn -B mvn test -DsuiteXmlFile=Ressources/PlayerRegressionTest.xml
