@@ -158,7 +158,7 @@ public class Base {
         // WriteYaml.put("file", fileResult);
         WriteYaml.put("file", System.getProperty("user.dir") + "/report_sample/" + Filter);
 
-        System.out.println(System.getProperty("user.dir") + "\\report_sample\\" + Filter);
+     //   System.out.println(System.getProperty("user.dir") + "\\report_sample\\" + Filter);
 
         // to ordere the values as given
         final DumperOptions options = new DumperOptions();
