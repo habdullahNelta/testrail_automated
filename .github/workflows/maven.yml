@@ -12,5 +12,5 @@ jobs:
       - name: Perform a Pester test from the Tests.ps1 file
         shell: pwsh
         run: |
-         mvn test -DsuiteXmlFile=Ressources/PlayerRegressionTest.xml
+         mvn test -DsuiteXmlFile=Ressources\PlayerRegressionTest.xml
 
