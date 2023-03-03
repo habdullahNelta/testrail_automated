@@ -156,7 +156,7 @@ public class Base {
         }
         String Filter = PathNameFilter(fileResult.toString());
         // WriteYaml.put("file", fileResult);
-        WriteYaml.put("file", System.getProperty("user.dir") + "\\report_sample\\" + Filter);
+        WriteYaml.put("file", System.getProperty("user.dir") + "/report_sample/" + Filter);
 
         System.out.println(System.getProperty("user.dir") + "\\report_sample\\" + Filter);
 
