@@ -23,5 +23,5 @@ jobs:
     - uses: browser-actions/setup-chrome@latest
     - run: chrome --version
 
-    - name: Build with Maven
+    - name: Run Test
       run: mvn -B test -DsuiteXmlFile=Ressources/Math/SumTests.xml
