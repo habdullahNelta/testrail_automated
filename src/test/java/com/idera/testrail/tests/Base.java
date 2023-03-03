@@ -106,7 +106,7 @@ public class Base {
 
 
         //  final String YamlPfad = "C:\\Users\\Hasan Abdullah\\IdeaProjects\\testng\\trcli-config2.yml";  System.getProperty("user.dir")
-        final String YamlPfad = System.getProperty("user.dir") + "\\trcli-config2.yml";
+        final String YamlPfad = System.getProperty("user.dir") + "/trcli-config2.yml";
         System.out.println(YamlPfad);
         System.out.println(suiteXmlFile);
         String SuiteNameFiltered = PathNameFilter(suiteXmlFile);
@@ -115,15 +115,7 @@ public class Base {
         Map<String, Integer> SuiteAndRunID;
         SuiteAndRunID = ImportFilterCSV(SuiteNameFiltered);
 
-      /*  final Object host = "https://esteventester.testrail.io";
-        final Object project = "test";
-        final Object username = "atharv.esteven@foundtoo.com";
-        final Object key = "/2HLUtQj8Lftji0KqynP-tDOf/YIPzEDaDRaPAXU6";
-        final Object title = SuiteNameFiltered;
-        final int run_id = SuiteAndRunID.get("Run_ID_Var");
-        final int suite_id = SuiteAndRunID.get("Suite_ID_Var");
-        final Object fileResult = "C:\\Users\\Hasan Abdullah\\IdeaProjects\\testng\\report_sample\\TEST-TestSuite.xml";
-        */
+    
 
 
         //read from yaml file
